@@ -75,14 +75,12 @@ section .adds {
 }
 section .adds > div {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 910px;
   width: 100%;
   text-align: center;
 }
 section .adds > div > P {
   font-size: 14px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 13px 0;
   width: 100%;
   color: #fff;
@@ -98,15 +96,107 @@ section .adds a:hover {
 section .product-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 692px);
   gap: 12px;
 }
 section .product-area .product {
-  height: 500px;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  border: 1px solid black;
 }
-section .product-area .full-col {
+section .product-area .product.full-col {
   grid-column-start: 1;
   grid-column-end: -1;
+}
+.product.macbook-air {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/macbook-air.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 30%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content h1 {
+  font-size: 48px;
+}
+.content h3 {
+  font-size: 21px;
+  font-weight: 300;
+}
+.content .m2-adds {
+  width: 244px;
+  height: 36px;
+  margin-top: 8px;
+  background-repeat: no-repeat;
+  background-size: 244px 36px;
+  background-image: url(../images/m2-adds.png);
+}
+.content .tips {
+  color: #86868b;
+  font-size: 19px;
+  margin-top: 11px;
+}
+.content .action-area {
+  display: flex;
+  margin-top: 10px;
+}
+.content .action-area a {
+  text-decoration: none;
+  color: #06c;
+  font-size: 19px;
+  cursor: pointer;
+}
+.content .action-area a:hover {
+  text-decoration: underline;
+}
+.content .action-area a::after {
+  content: "  >";
+}
+.content .action-area a:not(:first-child) {
+  margin-left: 32px;
+}
+.product.macbook-pro13 {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/mbp13.jpeg);
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 47px;
+}
+.product.macbook-pro13 .content h1 {
+  color: white;
+}
+.product.macbook-pro13 .content .m2-adds {
+  background-image: url(../images/m2-black.png);
+  background-size: 293px 68px;
+  width: 293px;
+  height: 68px;
+}
+.product.iPhone13 {
+  background-image: url(../images/iphone13.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fbfbfd;
+  padding: 47px;
+}
+.product.iPhone13-pro {
+  background-image: url(../images/iphone13-m.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fbfbfd;
+  padding-top: 50px;
+}
+.product.WATCH {
+  background-image: url(../images/watch-bg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fbfbfd;
+  padding-top: 50px;
 }
